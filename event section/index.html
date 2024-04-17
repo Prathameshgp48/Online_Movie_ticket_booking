@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Theater Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="  text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">    
+</head>
+<body>
+  <h1>Book a Movie Theater for Hosting an Event</h1>
+  <form id="booking-form">
+    <div class="form-group">
+      <label for="event-type">Type of Event:</label>
+      <select id="event-type" name="event-type" required>
+        <option value="" disabled selected>Select Event Type</option>
+        <option value="corporate-event">Corporate Event</option>
+        <option value="birthday-party">Birthday Party</option>
+        <option value="movie-screening">Movie Screening</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="event-date">Event Date:</label>
+      <input type="date" id="event-date" name="event-date" required>
+    </div>
+    <div class="form-group">
+      <label for="event-time">Event Time:</label>
+      <input type="time" id="event-time" name="event-time" required>
+    </div>
+    <div class="form-group">
+      <label for="guests">Expected Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="1000" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
